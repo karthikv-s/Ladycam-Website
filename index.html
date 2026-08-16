@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium professional photography portfolio and seamless booking experience by ladycam. Capturing solo portraits, squad group pictures, and events.">
+    <title>ladycam | Portfolio & Bookings</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css?v=10">
+</head>
+<body>
+    <!-- Grain Overlay -->
+    <div class="grain-overlay"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                ladycam
+            </a>
+            <button class="mobile-nav-toggle" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+            <nav class="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#booking" class="nav-link nav-cta">Book Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-bg-container">
+                <img src="images/hero_bg_vertical.jpg?v=1" alt="Atmospheric Background" class="hero-bg-img">
+                <div class="hero-gradient-overlay"></div>
+            </div>
+
+            <!-- Custom Ambient Bloom Orbs -->
+            <div class="ambient-orb orb-1"></div>
+            <div class="ambient-orb orb-2"></div>
+            
+            <div class="hero-content text-center">
+                <h1 class="hero-title animate-up">
+                    Capturing the <br>
+                    <span class="gradient-text">Poetry of Light</span>
+                </h1>
+                <p class="hero-subtitle animate-up-delayed">
+                    Timeless solo portraits, squad pictures, and event story-telling crafted with a cinematic touch. Based in Punjab, India.
+                </p>
+                <div class="hero-actions animate-up-delayed-more">
+                    <a href="#portfolio" class="btn btn-secondary">View Work</a>
+                    <a href="#booking" class="btn btn-primary">Book a Session <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span class="mouse-icon">
+                    <span class="mouse-wheel"></span>
+                </span>
+                <span class="scroll-text">Scroll Down</span>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section section-padding">
+            <div class="container grid-2-col">
+                <div class="about-image-container fade-in-left">
+                    <div class="about-img-frame">
+                        <img src="images/about_profile.jpg?v=5" alt="ladycam - Photographer" class="about-img">
+                        <div class="about-img-backdrop"></div>
+                    </div>
+                </div>
+                <div class="about-text-container fade-in-right">
+                    <span class="section-subtitle">The Storyteller</span>
+                    <h2 class="section-title">Hello, I'm ladycam.</h2>
+                    <p class="about-paragraph highlight-paragraph">
+                        I capture the raw details and aesthetic vibe of your moments—making you the main character in every frame.
+                    </p>
+                    <p class="about-paragraph">
+                        Photography is not just about documenting what is in front of the lens; it's about translating a feeling, an atmosphere, a fleeting whisper of time into a visual record that endures. I specialize in combining modern, clean editorial styling with authentic storytelling.
+                    </p>
+                    <p class="about-paragraph">
+                        Whether it is capturing your solo main character energy, squad pictures with your group, or the high energy of college fests and events, my goal is always to make my subjects feel natural, confident, and present.
+                    </p>
+                    <div class="about-stats-grid">
+                        <div class="stat-card">
+                            <h3 class="stat-num">150+</h3>
+                            <p class="stat-label">Shoots Completed</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3 class="stat-num">6+</h3>
+                            <p class="stat-label">Years Experience</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3 class="stat-num">100%</h3>
+                            <p class="stat-label">Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Gallery Section -->
+        <section id="portfolio" class="portfolio-section section-padding bg-darker">
+            <div class="container text-center">
+                <span class="section-subtitle">My Work</span>
+                <h2 class="section-title">Selected Galleries</h2>
+                
+                <!-- Category Filters -->
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="solo">Solo</button>
+                    <button class="filter-btn" data-filter="group">Group</button>
+                    <button class="filter-btn" data-filter="event">Events</button>
+                    <button class="filter-btn" data-filter="travel">Travel</button>
+                </div>
+
+                <!-- Gallery Grid -->
+                <div class="gallery-grid">
+                    <!-- Item 1 (Solo) -->
+                    <div class="gallery-item" data-category="solo">
+                        <div class="gallery-item-inner">
+                            <img src="images/solo_veil.jpg?v=1" alt="Mystique Veil Portrait" class="gallery-img">
+                            <div class="gallery-item-overlay">
+                                <span class="gallery-item-category">Solo</span>
+                                <h4 class="gallery-item-title">Mystique Veil</h4>
+                                <span class="gallery-item-icon"><i class="fa-solid fa-expand"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 (Solo) -->
+                    <div class="gallery-item" data-category="solo">
+                        <div class="gallery-item-inner">
+                            <img src="images/solo_holi.jpg?v=1" alt="Holi Celebration Portrait" class="gallery-img">
+                            <div class="gallery-item-overlay">
+                                <span class="gallery-item-category">Solo</span>
+                                <h4 class="gallery-item-title">Color Festival</h4>
+                                <span class="gallery-item-icon"><i class="fa-solid fa-expand"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 (Solo) -->
+                    <div class="gallery-item" data-category="solo">
+                        <div class="gallery-item-inner">
+                            <img src="images/solo_arms_spread.jpg?v=1" alt="Pink Blossom Portrait" class="gallery-img" style="object-position: center 25%;">
+                            <div class="gallery-item-overlay">
+                                <span class="gallery-item-category">Solo</span>
+                                <h4 class="gallery-item-title">Pink Blossom</h4>
+                                <span class="gallery-item-icon"><i class="fa-solid fa-expand"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 (Solo) -->
+                    <div class="gallery-item" data-category="solo">
+                        <div class="gallery-item-inner">
+                            <img src="images/solo_smell_flower.jpg?v=1" alt="Freedom in Fields Portrait" class="gallery-img">
+                            <div class="gallery-item-overlay">
+                                <span class="gallery-item-category">Solo</span>
+                                <h4 class="gallery-item-title">Freedom in Fields</h4>
+                                <span class="gallery-item-icon"><i class="fa-solid fa-expand"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 5 (Solo) -->
+                    <div class="gallery-item" data-category="solo">
+                        <div class="gallery-item-inner">
+                            <img src="images/solo_saree_flowers.jpg?v=1" alt="Blossom and Grace Portrait" class="gallery-img" style="object-position: center 25%;">
+                            <div class="gallery-item-overlay">
+                                <span class="gallery-item-category">Solo</span>
+                                <h4 class="gallery-item-title">Blossom & Grace</h4>
+                                <span class="gallery-item-icon"><i class="fa-solid fa-expand"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 6 (Solo) -->
+                    <div class="gallery-item" data-category="solo">
+                        <div class="gallery-item-inner">
+                            <img src="images/solo_pink_dress.jpg?v=1" alt="Innocent Smile Portrait" class="gallery-img" style="object-position: center 25%;">
+                            <div class="gallery-item-overlay">
+                                <span class="gallery-item-category">Solo</span>
+                                <h4 class="gallery-item-title">Innocent Smile</h4>
+                                <span class="gallery-item-icon"><i class="fa-solid fa-expand"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 7 (Solo) -->
+                    <div class="gallery-item" data-category="solo">
+                        <div class="gallery-item-inner">
+                            <img src="images/solo_black_jacket.jpg?v=1" alt="Urban Vibe Portrait" class="gallery-img" style="object-position: center 25%;">
+                            <div class="gallery-item-overlay">
+                                <span class="gallery-item-category">Solo</span>
+                                <h4 class="gallery-item-title">Urban Vibe</h4>
+                                <span class="gallery-item-icon"><i class="fa-solid fa-expand"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 8 (Event) -->
+                    <div class="gallery-item" data-category="event">
+                        <div class="gallery-item-inner">
+                            <img src="images/event_confetti.jpg?v=1" alt="Confetti Rain Concert" class="gallery-img" style="object-position: center 25%;">
+                            <div class="gallery-item-overlay">
+                                <span class="gallery-item-category">Event</span>
+                                <h4 class="gallery-item-title">Confetti Rain</h4>
+                                <span class="gallery-item-icon"><i class="fa-solid fa-expand"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 9 (Event) -->
+                    <div class="gallery-item" data-category="event">
+                        <div class="gallery-item-inner">
+                            <img src="images/event_indian_flags.jpg?v=1" alt="Indian Flag Performance" class="gallery-img">
+                            <div class="gallery-item-overlay">
+                                <span class="gallery-item-category">Event</span>
+                                <h4 class="gallery-item-title">National Pride</h4>
+                                <span class="gallery-item-icon"><i class="fa-solid fa-expand"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 10 (Event) -->
+                    <div class="gallery-item" data-category="event">
+                        <div class="gallery-item-inner">
+                            <img src="images/event_spotlight.jpg?v=1" alt="Spotlight Performance" class="gallery-img" style="object-position: center 25%;">
+                            <div class="gallery-item-overlay">
+                                <span class="gallery-item-category">Event</span>
+                                <h4 class="gallery-item-title">Spotlight energy</h4>
+                                <span class="gallery-item-icon"><i class="fa-solid fa-expand"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 11 (Event) -->
+                    <div class="gallery-item" data-category="event">
+                        <div class="gallery-item-inner">
+                            <img src="images/event_stage_energy.jpg?v=1" alt="Stage Presence Performance" class="gallery-img" style="object-position: center 25%;">
+                            <div class="gallery-item-overlay">
+                                <span class="gallery-item-category">Event</span>
+                                <h4 class="gallery-item-title">Stage Presence</h4>
+                                <span class="gallery-item-icon"><i class="fa-solid fa-expand"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 12 (Group) -->
+                    <div class="gallery-item" data-category="group">
+                        <div class="gallery-item-inner">
+                            <img src="images/group_holi.jpg?v=1" alt="Holi Celebration Group" class="gallery-img">
+                            <div class="gallery-item-overlay">
+                                <span class="gallery-item-category">Group</span>
+                                <h4 class="gallery-item-title">Holi Celebration</h4>
+                                <span class="gallery-item-icon"><i class="fa-solid fa-expand"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 13 (Group) -->
+                    <div class="gallery-item" data-category="group">
+                        <div class="gallery-item-inner">
+                            <img src="images/group_yellow_field.jpg?v=1" alt="Friends in Yellow Fields" class="gallery-img">
+                            <div class="gallery-item-overlay">
+                                <span class="gallery-item-category">Group</span>
+                                <h4 class="gallery-item-title">Fields of Joy</h4>
+                                <span class="gallery-item-icon"><i class="fa-solid fa-expand"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 14 (Group) -->
+                    <div class="gallery-item" data-category="group">
+                        <div class="gallery-item-inner">
+                            <img src="images/group_marching.jpg?v=1" alt="Marching Unity Group" class="gallery-img">
+                            <div class="gallery-item-overlay">
+                                <span class="gallery-item-category">Group</span>
+                                <h4 class="gallery-item-title">Unity & Celebration</h4>
+                                <span class="gallery-item-icon"><i class="fa-solid fa-expand"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 15 (Travel) -->
+                    <div class="gallery-item" data-category="travel">
+                        <div class="gallery-item-inner">
+                            <img src="images/travel_snowy_peaks.jpg?v=1" alt="Snowy Mountain Valley Landscape" class="gallery-img">
+                            <div class="gallery-item-overlay">
+                                <span class="gallery-item-category">Travel</span>
+                                <h4 class="gallery-item-title">Mountain Valley</h4>
+                                <span class="gallery-item-icon"><i class="fa-solid fa-expand"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 16 (Travel) -->
+                    <div class="gallery-item" data-category="travel">
+                        <div class="gallery-item-inner">
+                            <img src="images/travel_monkeys.jpg?v=1" alt="Mother and Baby Monkey Wildlife" class="gallery-img">
+                            <div class="gallery-item-overlay">
+                                <span class="gallery-item-category">Travel</span>
+                                <h4 class="gallery-item-title">Wild Encounters</h4>
+                                <span class="gallery-item-icon"><i class="fa-solid fa-expand"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Instagram CTA -->
+                <div class="gallery-instagram-cta fade-in" style="margin-top: 40px; display: flex; justify-content: center; align-items: center;">
+                    <a href="https://www.instagram.com/ladyca.m?igsh=dXc2MzhqZjEyMnkw" target="_blank" class="instagram-btn">
+                        <span class="instagram-icon-box">
+                            <i class="fa-brands fa-instagram"></i>
+                        </span>
+                        <span class="instagram-btn-text">View More on Instagram</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services & Rates Section -->
+        <section id="services" class="services-section section-padding">
+            <!-- Background Orbs -->
+            <div class="ambient-orb orb-3"></div>
+            
+            <div class="container">
+                <div class="text-center">
+                    <span class="section-subtitle">Offerings</span>
+                    <h2 class="section-title">Packages & Rates</h2>
+                    <p class="section-description">Choose a package that fits your story. Launch offer details are listed below!</p>
+                    
+                    <!-- Launch Offer Alert Banner -->
+                    <div class="launch-offer-banner fade-in">
+                        <div class="banner-icon"><i class="fa-solid fa-bolt"></i></div>
+                        <div class="banner-text">
+                            <h3>LAUNCH OFFER</h3>
+                            <p>First 5 Solo Shoots — <strong>ONLY ₹150 EACH!</strong> Book yours before the slots fill up.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Package 1 (Solo) -->
+                    <div class="service-card fade-in">
+                        <div class="card-badge">Launch Special</div>
+                        <div class="service-card-header">
+                            <h3 class="package-name">Solo Shoots</h3>
+                            <p class="package-desc">For the main character ✨. Perfect for portraits, creative profiles, and aesthetic Instagram content.</p>
+                            <div class="package-price">
+                                <span class="currency">₹</span>
+                                <span class="price-val">199</span>
+                                <span class="price-period">/ session</span>
+                            </div>
+                        </div>
+                        <div class="service-card-body">
+                            <ul class="package-features">
+                                <li><i class="fa-solid fa-circle-check"></i> 1 Hour creative shoot</li>
+                                <li><i class="fa-solid fa-circle-check"></i> 15+ Fully edited high-res photos</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Online gallery delivery in 7 days</li>
+                                <li><i class="fa-solid fa-circle-check"></i> First 5 shoots are only ₹150!</li>
+                            </ul>
+                            <a href="#booking" class="btn btn-outline select-package-btn" data-package="Solo Shoots">Select Package</a>
+                        </div>
+                    </div>
+
+                    <!-- Package 2 (Group) -->
+                    <div class="service-card premium-card fade-in">
+                        <div class="card-badge">Popular</div>
+                        <div class="service-card-header">
+                            <h3 class="package-name">Group Shoots</h3>
+                            <p class="package-desc">Friends • Squad • Group pictures. Document your best times with your favorite squad.</p>
+                            <div class="package-price">
+                                <span class="currency">₹</span>
+                                <span class="price-val">399</span>
+                                <span class="price-period">/ session</span>
+                            </div>
+                        </div>
+                        <div class="service-card-body">
+                            <ul class="package-features">
+                                <li><i class="fa-solid fa-circle-check"></i> 1.5 Hours creative group session</li>
+                                <li><i class="fa-solid fa-circle-check"></i> 25+ Fully edited high-res photos</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Includes group & solo sub-shots</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Online gallery delivery in 7 days</li>
+                            </ul>
+                            <a href="#booking" class="btn btn-primary select-package-btn" data-package="Group Shoots">Select Package</a>
+                        </div>
+                    </div>
+
+                    <!-- Package 3 (Events) -->
+                    <div class="service-card fade-in">
+                        <div class="service-card-header">
+                            <h3 class="package-name">Event Shoots</h3>
+                            <p class="package-desc">Freshers • Parties • College Events. Perfect for capturing high-energy fests and social gather-ups.</p>
+                            <div class="package-price">
+                                <span class="currency">₹</span>
+                                <span class="price-val">599</span>
+                                <span class="price-period">/ hour</span>
+                            </div>
+                        </div>
+                        <div class="service-card-body">
+                            <ul class="package-features">
+                                <li><i class="fa-solid fa-circle-check"></i> Hourly billing model</li>
+                                <li><i class="fa-solid fa-circle-check"></i> High-quality candid event coverage</li>
+                                <li><i class="fa-solid fa-circle-check"></i> 50+ Edited high-res photos / hour</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Rapid 48-hour delivery preview</li>
+                            </ul>
+                            <a href="#booking" class="btn btn-outline select-package-btn" data-package="Event Shoots">Select Package</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Custom Shoots Section -->
+                <div class="custom-shoots-card glass-card fade-in text-center" style="margin-top: 50px; padding: 40px; border-radius: 20px; background: var(--bg-card); border: 1px solid var(--border-color); backdrop-filter: blur(10px);">
+                    <span class="custom-card-icon" style="font-size: 2.5rem; display: block; margin-bottom: 15px;">✨</span>
+                    <h3 style="font-size: 1.8rem; margin-bottom: 10px; font-family: var(--font-heading);">CUSTOM SHOOTS AVAILABLE</h3>
+                    <p style="margin-bottom: 25px; color: var(--text-secondary);">Themed • Conceptual • Customized Photoshoots tailored exactly to your vision.</p>
+                    <a href="#booking" class="btn btn-secondary select-package-btn" data-package="Custom Shoots">Inquire for Custom Shoot</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking & Contact Section -->
+        <section id="booking" class="booking-section section-padding bg-darker">
+            <div class="container grid-2-col">
+                <div class="contact-info-container">
+                    <span class="section-subtitle">Let's Connect</span>
+                    <h2 class="section-title">Book A Shoot</h2>
+                    <p class="contact-desc">
+                        Ready to make something beautiful? Send over your booking request details below. Clicking submit will automatically package your details into an SMS or email draft right on your device!
+                    </p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="contact-text">
+                                <span class="contact-label">Email Me</span>
+                                <a href="mailto:Ladyycam381@gmail.com" class="contact-link">Ladyycam381@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="contact-text">
+                                <span class="contact-label">Call Directly</span>
+                                <a href="tel:+919074640812" class="contact-link">+91 90746 40812</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="contact-text">
+                                <span class="contact-label">Location</span>
+                                <span class="contact-val">Punjab, India</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-accordion">
+                        <h4 class="faq-title">Frequently Asked Questions</h4>
+                        <div class="faq-item">
+                            <button class="faq-question">What is your turnaround time? <i class="fa-solid fa-chevron-down"></i></button>
+                            <div class="faq-answer">
+                                <p>Standard portrait galleries take 1-2 business days. Weddings and large events take 3-4 days. Rapid previews are available for events.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">Do you travel outside Punjab? <i class="fa-solid fa-chevron-down"></i></button>
+                            <div class="faq-answer">
+                                <p>Absolutely! I love traveling for destination shoots. Travel and accommodation expenses are added dynamically depending on the location.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="booking-form-container">
+                    <form id="bookingForm" class="booking-form glass-card">
+                        <h3 class="form-title">Inquiry Details</h3>
+                        <p class="form-subtitle">Fill in the fields below to customize your request.</p>
+                        
+                        <div class="form-group">
+                            <label for="clientName"><i class="fa-regular fa-user"></i> Full Name</label>
+                            <input type="text" id="clientName" name="name" required placeholder="Full Name">
+                            <span class="error-msg" id="nameError">Name is required</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="clientPhone"><i class="fa-solid fa-mobile-screen-button"></i> Phone Number</label>
+                            <input type="tel" id="clientPhone" name="phone" required placeholder="+91 98765 43210">
+                            <span class="error-msg" id="phoneError">Valid phone number required</span>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="shootType"><i class="fa-solid fa-camera"></i> Shoot Type</label>
+                                <select id="shootType" name="shootType">
+                                    <option value="Solo">Solo Shoot (₹199)</option>
+                                    <option value="Group">Group Shoot (₹399)</option>
+                                    <option value="Event">Event Shoot (₹599/hr)</option>
+                                    <option value="Custom">Custom Shoot</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="shootDate"><i class="fa-regular fa-calendar"></i> Preferred Date</label>
+                                <input type="date" id="shootDate" name="date" required>
+                                <span class="error-msg" id="dateError">Please select a future date</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="clientMessage"><i class="fa-regular fa-message"></i> Message / Details (Optional)</label>
+                            <textarea id="clientMessage" name="message" rows="4" placeholder="Tell me more about your ideas, location, package adjustments..."></textarea>
+                        </div>
+
+                        <!-- Form Success/Error states -->
+                        <div id="formSuccess" class="form-success-msg" style="display: none;">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <h4>Inquiry Sent Successfully!</h4>
+                            <p>Thank you. I have received your request and will get back to you shortly.</p>
+                        </div>
+                        <div id="formError" class="form-error-msg" style="display: none;">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <h4>Submission Failed</h4>
+                            <p>Something went wrong. Please try again or email me directly.</p>
+                        </div>
+
+                        <!-- Form Actions -->
+                        <div class="booking-submit-container">
+                            <button type="submit" id="btnBookNow" class="btn btn-primary btn-submit">
+                                Book Now <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <h2 class="footer-logo">ladycam</h2>
+            <p class="footer-tagline">Making moments timeless through a cinematic lens.</p>
+            <div class="social-links">
+                <a href="https://wa.me/919074640812" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="mailto:Ladyycam381@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+            <hr class="footer-divider">
+            <p class="copyright">&copy; 2026 ladycam. All Rights Reserved. Designed with passion.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox-modal">
+        <span class="lightbox-close">&times;</span>
+        <div class="lightbox-content-container">
+            <img class="lightbox-content" id="lightboxImg" alt="Expanded image view">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+        <a class="lightbox-prev">&#10094;</a>
+        <a class="lightbox-next">&#10095;</a>
+    </div>
+
+    <!-- Main JavaScript File -->
+    <script src="app.js"></script>
+</body>
+</html>
