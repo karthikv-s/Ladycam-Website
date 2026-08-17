@@ -1,0 +1,6 @@
+# robots.txt for ladycam website
+User-agent: *
+Allow: /
+
+# Sitemap URL
+Sitemap: https://ladycam.com/sitemap.xml
