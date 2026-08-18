@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap URL
-Sitemap: https://ladycam.com/sitemap.xml
+Sitemap: https://ladycam.online/sitemap.xml
